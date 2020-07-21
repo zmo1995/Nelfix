@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReviewCell" rowHeight="130" id="KGk-i7-Jjw" customClass="ReviewCell" customModule="NelFlix" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="131"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAd-kA-sTD">
+                        <rect key="frame" x="5" y="5" width="99.5" height="20.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ur-KV-v91">
+                                <rect key="frame" x="0.0" y="0.0" width="22" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="abdefeefe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTH-3T-FF2">
+                                <rect key="frame" x="22" y="0.0" width="77.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.27656023460000001" blue="0.43802504060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IT should contain less than 100 words" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEZ-Xa-TfE">
+                        <rect key="frame" x="20" y="33" width="198" height="13.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="301" id="U6c-PD-BPQ"/>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="wHI-Jd-5kH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xro-y1-rgr">
+                        <rect key="frame" x="207" y="89" width="77" height="22"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMt-nE-wpo">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="22"/>
+                                <state key="normal" image="hand.thumbsdown.fill" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hvs-2y-HnY">
+                                <rect key="frame" x="28" y="0.0" width="49" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="QQq-BA-HXM">
+                        <rect key="frame" x="40" y="89" width="69" height="22"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vam-Wd-pfN">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="6ys-JJ-tvk"/>
+                                    <constraint firstAttribute="width" constant="20" id="k6Q-wZ-8hZ"/>
+                                </constraints>
+                                <state key="normal" title="Like" image="hand.thumbsup.fill" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6A-7p-ycJ">
+                                <rect key="frame" x="20" y="0.0" width="49" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="XVn-0C-sVk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="xro-y1-rgr" secondAttribute="bottom" constant="20" id="0mO-Bg-3Xh"/>
+                    <constraint firstAttribute="bottom" secondItem="QQq-BA-HXM" secondAttribute="bottom" constant="20" id="4B3-U0-gmB"/>
+                    <constraint firstItem="EAd-kA-sTD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="PUL-EB-Eib"/>
+                    <constraint firstItem="EAd-kA-sTD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="RZA-gT-hoZ"/>
+                    <constraint firstItem="QQq-BA-HXM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="jBu-VI-w3i"/>
+                    <constraint firstItem="lEZ-Xa-TfE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="jem-FK-kZ2"/>
+                    <constraint firstItem="lEZ-Xa-TfE" firstAttribute="top" secondItem="EAd-kA-sTD" secondAttribute="bottom" constant="7.5" id="kXQ-fV-SG8"/>
+                    <constraint firstAttribute="trailing" secondItem="xro-y1-rgr" secondAttribute="trailing" constant="40" id="uz6-nK-13z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bodyLabel" destination="lEZ-Xa-TfE" id="i85-Ip-YaH"/>
+                <outlet property="dislikeBtn" destination="IMt-nE-wpo" id="8MV-OG-r9Q"/>
+                <outlet property="dislikeLabel" destination="Hvs-2y-HnY" id="i2e-hW-7qN"/>
+                <outlet property="likeBtn" destination="vam-Wd-pfN" id="hIz-8y-v1u"/>
+                <outlet property="likeLabel" destination="c6A-7p-ycJ" id="oq1-jh-iOm"/>
+                <outlet property="usernameLabel" destination="MTH-3T-FF2" id="47d-Sj-aEt"/>
+            </connections>
+            <point key="canvasLocation" x="79.710144927536234" y="92.745535714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hand.thumbsdown.fill" catalog="system" width="64" height="62"/>
+        <image name="hand.thumbsup.fill" catalog="system" width="64" height="62"/>
+    </resources>
+</document>
